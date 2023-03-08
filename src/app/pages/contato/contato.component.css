@@ -59,3 +59,58 @@ a{
     margin-top: 10vh;
 }
 
+@media screen and (max-width: 960px) {
+    .contato {
+        width: 90vw;
+        margin-top: 5vh;
+        display: flex;
+    }
+
+    .right {
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .email {
+        font-size: 1.8vh;
+    }
+
+    h2 {
+        font-size: vh;
+    }
+
+    .social {
+        width: 50vw;
+        margin-top: 2vh;
+    }
+    .social img {
+        padding-right: 1vw;
+    }
+    .main {
+        height: 85vh;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .right {
+        display: none;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .left h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
