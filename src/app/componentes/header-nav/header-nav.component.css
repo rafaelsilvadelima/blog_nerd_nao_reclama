@@ -84,6 +84,12 @@ a:nth-child(5):hover~.animation {
     background-color: #735f7a;
 }
 
+.active {
+    width: 20%;
+    background-color: #735f7a;
+    border-radius: 10px;
+}
+
 @media screen and (max-width: 960px) {
     nav {
         width: 98vw;

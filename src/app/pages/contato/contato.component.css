@@ -1,0 +1,61 @@
+.main {
+    background-image: url(src\assets\img\background_quadrinho.png);
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5vh;
+}
+
+.contato {
+    background-color: #1F1D2B;
+    border-radius: 10px;
+    width: 50vw;
+    height: auto;
+    margin-top: 5vh;
+    display: flex;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 4vh 2vw;
+    border-radius: 10px;
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 4vh 2vw;
+}
+
+.right img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #91879F;
+    font-size: 3vh;
+    line-height: 4vh;
+}
+
+a img {
+    width: 20%;
+}
+
+a{
+    margin-right: 1vw;
+}
+.social {
+    width: 90%;
+    margin-top: 10vh;
+}
+

@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderNavComponent } from './header-nav/header-nav.component';
 import { CarrocelComponent } from './carrocel/carrocel.component';
+import { AppRoutingModule } from '../app-routing.module';
+import { MaterialModule } from '../material/material.module';
 
 
 
@@ -13,7 +15,9 @@ import { CarrocelComponent } from './carrocel/carrocel.component';
     CarrocelComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AppRoutingModule,
+    MaterialModule
   ],
   exports: [
     FooterComponent,

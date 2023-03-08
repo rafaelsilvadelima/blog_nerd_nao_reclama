@@ -17,6 +17,9 @@ import { ToastrModule } from 'ngx-toastr';
 import { HomeComponent } from './pages/home/home.component';
 import { ComponentesModule } from './componentes/componentes.module';
 import { ContatoComponent } from './pages/contato/contato.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MaterialModule } from './material/material.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -42,7 +45,10 @@ import { ContatoComponent } from './pages/contato/contato.component';
       closeButton: true,
       positionClass :'toast-top-center'
     }),
-    ComponentesModule
+    ComponentesModule,
+    MatFormFieldModule,
+    MaterialModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
