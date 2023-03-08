@@ -85,11 +85,11 @@ a:nth-child(5):hover~.animation {
 }
 
 @media screen and (max-width: 960px) {
-    .conteiner nav {
-        width: 95vw;
+    nav {
+        width: 98vw;
     }
 
     nav a {
-        font-size: 1px;
+        font-size: 1.8vh;
     }
 }

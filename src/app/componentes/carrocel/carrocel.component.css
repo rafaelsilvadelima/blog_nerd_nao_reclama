@@ -21,15 +21,15 @@
     top: 0;
     left: 0;
     box-shadow: 0 0 2rem rgba(0, 0, 0, .5);
-    border-radius: 3px;
+    border-radius: 10px;
     font-family: 'Great Vibes';
 }
 
-.una {
+.um {
     background-image: url(////=), url(src\assets\img\zelda2.png);
 }
 
-.dos {
+.dois {
     background-image: url(////=), url(src\assets\img\naruto-shippuden-episodio-jiraiya-morre-768x433.jpg);
 }
 
@@ -42,20 +42,21 @@ h2 {
     font-family: lato;
     text-align: center;
     font-size: 6vh;
-    font-weight: 300;
     line-height: 8vh;
     background: #1F1D2A;
     box-shadow: 0 0 5px rgba(0, 0, 0, .7);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
-.card p {
+/* .card p {
     text-align: center;
     color: #B7B3BD;
     font-size: 2vh;
     line-height: 3vh;
-    text-shadow: -1px -1px 0 #0D757D, 1px 1px 0 #000;
+    text-shadow: -1px -1px 0 #2f3232, 1px 1px 0 #000;
     margin-top: 3vh;
-}
+} */
 
 label {
     position: absolute;
@@ -75,21 +76,21 @@ label {
 
 .outra+.outra,
 #um:checked~.tres .afim,
-#dois:checked~.una .afim,
-#tres:checked~.dos .afim {
+#dois:checked~.um .afim,
+#tres:checked~.dois .afim {
     right: 0;
     text-align: left;
 }
 
-#um:checked~.una .outra,
-#dois:checked~.dos .outra,
+#um:checked~.um .outra,
+#dois:checked~.dois .outra,
 #tres:checked~.tres .outra {
     background: #91879F;
     display: block;
 }
 
-#um:checked~.una .afim,
-#dois:checked~.dos .afim,
+#um:checked~.um .afim,
+#dois:checked~.dois .afim,
 #tres:checked~.tres .afim,
 :not(:checked)~.outra {
     display: none;
@@ -110,9 +111,9 @@ label {
     font-size: 10vw;
 }
 
-#um:checked~.dos,
+#um:checked~.dois,
 #dois:checked~.tres,
-#tres:checked~.una {
+#tres:checked~.um {
     animation: 1s fuera-izq;
     animation-fill-mode: forwards;
     transform-origin: center left;
@@ -120,16 +121,16 @@ label {
 }
 
 #um:checked~.tres,
-#dois:checked~.una,
-#tres:checked~.dos {
+#dois:checked~.um,
+#tres:checked~.dois {
     animation: 1.5s fuera-dch;
     animation-fill-mode: forwards;
     transform-origin: center right;
     z-index: 2;
 }
 
-#um:checked~.una,
-#dois:checked~.dos,
+#um:checked~.um,
+#dois:checked~.dois,
 #tres:checked~.tres {
     animation: 2s central;
     animation-fill-mode: forwards;
@@ -186,4 +187,15 @@ label {
     50% {
         opacity: .7;
     }
+}
+
+@media screen and (max-width: 960px) {
+    h2 {
+        font-size: 3vh;
+    }
+
+    .galeria {
+        width: 95vw;
+    }
+
 }
