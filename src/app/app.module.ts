@@ -15,11 +15,14 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { firebaseConfig } from 'src/config/firebase.config';
 import { ToastrModule } from 'ngx-toastr';
 import { HomeComponent } from './pages/home/home.component';
+import { ComponentesModule } from './componentes/componentes.module';
+import { ContatoComponent } from './pages/contato/contato.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ContatoComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,8 @@ import { HomeComponent } from './pages/home/home.component';
       progressBar: true,
       closeButton: true,
       positionClass :'toast-top-center'
-    })
+    }),
+    ComponentesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

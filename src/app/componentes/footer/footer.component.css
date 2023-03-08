@@ -1,0 +1,18 @@
+footer {
+    height: 15vh;
+    width: 100%;
+    background-color: #1F1D2B;
+    margin-top: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #91879F;
+}
+
+@media screen and (max-width: 960px) {
+
+    footer h2 {
+        font-size: 3vh;
+        line-height: 4vh;
+    }
+}

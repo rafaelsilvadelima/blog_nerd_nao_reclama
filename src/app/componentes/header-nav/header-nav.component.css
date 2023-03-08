@@ -1,0 +1,95 @@
+nav {
+    position: relative;
+    width: 50vw;
+    height: 8vh;
+    background-color: #1F1D2B;
+    border-radius: 10px;
+}
+
+nav a {
+    line-height: 4em;
+    height: 100%;
+    font-size: 2vh;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #c1c0c2;
+    cursor: pointer;
+}
+
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+}
+
+a:nth-child(1) {
+    width: 20%;
+}
+
+a:nth-child(2) {
+    width: 20%;
+}
+
+a:nth-child(3) {
+    width: 20%;
+}
+
+a:nth-child(4) {
+    width: 20%;
+}
+
+a:nth-child(5) {
+    width: 20%;
+}
+
+nav .start-Blog,
+a:nth-child(1):hover~.animation {
+    width: 20%;
+    left: 0%;
+    background-color: #735f7a;
+}
+
+nav .start-Noticias,
+a:nth-child(2):hover~.animation {
+    width: 20%;
+    left: 20%;
+    background-color: #735f7a;
+}
+
+nav .start-Repositorio,
+a:nth-child(3):hover~.animation {
+    width: 20%;
+    left: 40%;
+    background-color: #735f7a;
+}
+
+nav .start-Portefolio,
+a:nth-child(4):hover~.animation {
+    width: 20%;
+    left: 60%;
+    background-color: #735f7a;
+}
+
+nav .start-Contato,
+a:nth-child(5):hover~.animation {
+    width: 20%;
+    left: 80%;
+    background-color: #735f7a;
+}
+
+@media screen and (max-width: 960px) {
+    .conteiner nav {
+        width: 95vw;
+    }
+
+    nav a {
+        font-size: 1px;
+    }
+}
