@@ -7,7 +7,7 @@ nav {
 }
 
 nav a {
-    line-height: 4em;
+    line-height: 8vh;
     height: 100%;
     font-size: 2vh;
     display: inline-block;
@@ -93,9 +93,12 @@ a:nth-child(5):hover~.animation {
 @media screen and (max-width: 960px) {
     nav {
         width: 98vw;
+        height: 5vh;
+        line-height: 0;
     }
 
     nav a {
-        font-size: 1.8vh;
+        font-size: 1.3vh;
+        line-height: 5vh;
     }
 }

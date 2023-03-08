@@ -33,23 +33,23 @@
 }
 
 .um {
-    background-image: url(////=), url(src\assets\img\zelda2.png);
+    background-image: url(////=), url(src\assets\img\zelda2.webp);
 }
 
 .dois {
-    background-image: url(////=), url(src\assets\img\naruto-shippuden-episodio-jiraiya-morre-768x433.jpg);
+    background-image: url(////=), url(src\assets\img\naruto-shippuden-episodio-jiraiya-morre.jpg);
 }
 
 .tres {
-    background-image: url(////=), url(src\assets\img\attack_on_titan_especial.png);
+    background-image: url(////=), url(src\assets\img\attack_on_titan_especial.webp);
 }
 
 h2 {
     color: #B7B3BD;
     font-family: lato;
     text-align: center;
-    font-size: 6vh;
-    line-height: 8vh;
+    font-size: 3vh;
+    line-height: 6vh;
     background: #1F1D2A;
     box-shadow: 0 0 5px rgba(0, 0, 0, .7);
     border-top-right-radius: 10px;
@@ -145,6 +145,10 @@ label {
     z-index: 3;
 }
 
+    #um, #dois, #tres {
+        display: none;
+    }
+
 @keyframes fuera-izq {
     0% {
         transform: scale(1) translatex(0%);
@@ -198,11 +202,11 @@ label {
 
 @media screen and (max-width: 960px) {
     h2 {
-        font-size: 3vh;
+        display: none;
     }
 
     .galeria {
-        width: 95vw;
+        width: 85vw;
     }
 
 }

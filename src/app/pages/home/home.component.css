@@ -12,6 +12,10 @@
     position: absolute;
 }
 
+app-header-nav {
+    margin-bottom: 3vh;
+}
+
 .conteiner {
     width: 50vw;
     position: relative;
@@ -91,28 +95,27 @@ app-footer {
     }
 
     .conteiner {
-        width: 75%;
-    }
-
-    .blog {
-        width: 100%;
-    }
-
-    .conteudo {
-        width: 100%;
-    }
-
-    footer h2 {
-        font-size: 3vh;
-        line-height: 4vh;
-    }
-
-    .conteiner nav {
         width: 95vw;
     }
 
-    nav a {
-        font-size: 1px;
+    .blog {
+        width: 95%;
+        padding: 1 1;
+        margin-top: 4vh;
+        padding: 1vh;
+    }
+
+    .conteudo {
+        width: 90%;
+        margin-top: 1vh;
+    }
+
+    .main {
+        padding-top: 3vh;
+    }
+
+    .tituloPage {
+        font-size: 3vh;
     }
 
 }
